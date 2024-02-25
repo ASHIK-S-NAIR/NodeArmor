@@ -1,0 +1,44 @@
+
+@media screen and (max-width: 768px) {
+    /* Tab screen start */
+  
+    /* general section start */
+    .wrap {
+      /* width: min(91%, 1250px); */
+      width: 87%;
+    }
+    /* general section end */
+  
+    /* homePage section start */
+  
+    .homePage-hero-header {
+      font-size: 2.9em;
+    }
+  
+    .homePage-hero-subSec {
+      grid-template-columns: 100%;
+    }
+    .homePage-hero-subSec-left {
+      align-items: center;
+      margin-bottom: 5em;
+    }
+  
+    .homePage-hero-subHeader {
+      width: 80%;
+      text-align: center;
+    }
+  
+    .homePage-hero-subSec-right {
+      padding-left: 0;
+      display: grid;
+      place-items: center;
+    }
+  
+    .homePage-hero-img {
+      width: 85%;
+    }
+  
+    /* homePage section end */
+  
+    /* Tab screen end */
+  }
