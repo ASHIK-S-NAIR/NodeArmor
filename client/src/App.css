@@ -1,0 +1,258 @@
+/* general setting start */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* color */
+  --primary-color: rgb(22, 24, 35);
+  --main-color: rgb(243, 101, 63);
+  /* --yellow-color: #ffe916;
+    --yellow-hover-color: #edd711;
+    --fruit-color: #fc6130;
+    --vegetable-color: #46c270; */
+
+  /* font */
+  --primary-font: "Raleway", sans-serif;
+  --main-font: "Comfortaa", cursive;
+}
+
+/* custom scroll-bar starts */
+
+body::-webkit-scrollbar {
+  width: 0.9vw;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  height: 10vw;
+  border-radius: 100vw;
+  border: 2px solid var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
+}
+
+* {
+  scrollbar-color: var(--primary-color) white;
+  scrollbar-width: thin;
+}
+
+/* custom scroll-bar ends */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.wrap {
+  /* width: min(91%, 1250px); */
+  width: 85%;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cta-btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.6em 1.7em;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* general setting end */
+
+/* homePage Section Start */
+
+.homePage {
+  background-color: var(--primary-color);
+}
+
+.homePage-nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.homePage-nav-logo {
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+
+.homePage-nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+.homePage-hero-sec {
+  background-color: var(--primary-color);
+}
+
+.homePage-hero-wrap {
+  padding: 4.5em 0;
+}
+
+.homePage-hero-header {
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.homePage-hero-subSec {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.homePage-hero-subSec-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.homePage-hero-subHeader {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8em;
+  margin-bottom: 2em;
+}
+
+.homePage-hero-subSec-right {
+  width: 100%;
+  padding-left: 1em;
+}
+
+.homePage-hero-img {
+  width: 100%;
+}
+
+/* homePage Section End */
+
+@media screen and (max-width: 768px) {
+  /* Tab screen start */
+
+  /* general section start */
+  .wrap {
+    /* width: min(91%, 1250px); */
+    width: 87%;
+  }
+  /* general section end */
+
+  /* homePage section start */
+
+  .homePage-hero-header {
+    font-size: 2.9em;
+  }
+
+  .homePage-hero-subSec {
+    grid-template-columns: 100%;
+  }
+  .homePage-hero-subSec-left {
+    align-items: center;
+    margin-bottom: 5em;
+  }
+
+  .homePage-hero-subHeader {
+    width: 80%;
+    text-align: center;
+  }
+
+  .homePage-hero-subSec-right {
+    padding-left: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .homePage-hero-img {
+    width: 85%;
+  }
+
+  /* homePage section end */
+
+  /* Tab screen end */
+}
+
+@media screen and (max-width: 500px) {
+  /* Mobile screen start */
+
+  /* general section start */
+  .wrap {
+    /* width: min(91%, 1250px); */
+    width: 93%;
+  }
+  /* general section end */
+
+  /* homePage section start */
+
+  .homePage-nav-wrap {
+    padding: 1em 0;
+  }
+
+  .homePage-nav-logo {
+    font-size: 1.1rem;
+  }
+
+  .homePage-nav-link {
+    font-size: 0.9rem;
+  }
+
+  .homePage-hero-header {
+    font-size: 2.5em;
+  }
+
+  .homePage-hero-subSec-left {
+    margin-bottom: 3em;
+  }
+
+  .homePage-hero-subHeader {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .homePage-hero-img {
+    width: 90%;
+  }
+
+  /* homePage section end */
+
+  /* Mobile screen start */
+}
