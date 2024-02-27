@@ -6,7 +6,13 @@ const { v4 } = uuid;
 
 const userSchema = new Schema(
   {
-    name: {
+    firstName: {
+      type: String,
+      maxlength: 32,
+      required: true,
+      trim: true,
+    },
+    secondName: {
       type: String,
       maxlength: 32,
       required: true,
@@ -27,11 +33,6 @@ const userSchema = new Schema(
     //     type: String,
     //   },
     // },
-    phoneNumber: {
-      type: Number,
-      required: true,
-      unique: true,
-    },
     salt: String,
     // cart: [
     //   {

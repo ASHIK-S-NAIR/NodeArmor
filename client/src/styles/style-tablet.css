@@ -1,44 +1,70 @@
-
 @media screen and (max-width: 768px) {
-    /* Tab screen start */
-  
-    /* general section start */
-    .wrap {
-      /* width: min(91%, 1250px); */
-      width: 87%;
-    }
-    /* general section end */
-  
-    /* homePage section start */
-  
-    .homePage-hero-header {
-      font-size: 2.9em;
-    }
-  
-    .homePage-hero-subSec {
-      grid-template-columns: 100%;
-    }
-    .homePage-hero-subSec-left {
-      align-items: center;
-      margin-bottom: 5em;
-    }
-  
-    .homePage-hero-subHeader {
-      width: 80%;
-      text-align: center;
-    }
-  
-    .homePage-hero-subSec-right {
-      padding-left: 0;
-      display: grid;
-      place-items: center;
-    }
-  
-    .homePage-hero-img {
-      width: 85%;
-    }
-  
-    /* homePage section end */
-  
-    /* Tab screen end */
+  /* Tab screen start */
+
+  /* general section start */
+  .wrap {
+    /* width: min(91%, 1250px); */
+    width: 87%;
   }
+  /* general section end */
+
+  /* homePage section start */
+
+  .homePage-hero-header {
+    font-size: 2.9em;
+  }
+
+  .homePage-hero-subSec {
+    grid-template-columns: 100%;
+  }
+  .homePage-hero-subSec-left {
+    align-items: center;
+    margin-bottom: 5em;
+  }
+
+  .homePage-hero-subHeader {
+    width: 80%;
+    text-align: center;
+  }
+
+  .homePage-hero-subSec-right {
+    padding-left: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .homePage-hero-img {
+    width: 85%;
+  }
+
+  /* homePage section end */
+
+  /* signup & signin section start */
+
+  .signUp-hero-wrap, .signIn-hero-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .signUp-hero-form-header, .signIn-hero-form-header {
+    text-align: center;
+  }
+
+  .signUp-hero-form-subHeader, .signIn-hero-form-subHeader {
+    text-align: center;
+  }
+
+  .signUp-hero-form-sec, .signIn-hero-form-sec {
+    width: 80%;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .signUp-hero-img-sec, .signIn-hero-img-sec {
+    display: none;
+  }
+
+  /* signup & signin section end */
+
+
+  /* Tab screen end */
+}

@@ -37,9 +37,13 @@ io.on("connection", (socket) => {
 
 // routes
 const authRoute = require("./src/api/v1/routes/auth");
+const userRoute = require("./src/api/v1/routes/user");
+const projectRoute = require("./src/api/v1/routes/project");
 
 // Routes
 app.use("/api/v1/", authRoute);
+app.use("/api/v1/", projectRoute);
+app.use("/api/v1/", userRoute);
 
 app.get("/", (req, res) => {
   res.json({ msg: "get is running" });

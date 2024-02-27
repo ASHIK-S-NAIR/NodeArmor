@@ -3,12 +3,12 @@ const jwt = require("jsonwebtoken");
 const expressJWT = require("express-jwt");
 
 exports.signup = async (req, res) => {
-  const { name, email, phoneNumber, password } = req.body;
+  const { firstName, secondName, email, password } = req.body;
   try {
     const user = await User.create({
-      name,
+      firstName,
+      secondName,
       email,
-      phoneNumber,
       password,
     });
     await user.save();
@@ -17,7 +17,6 @@ exports.signup = async (req, res) => {
     user.updatedAt = undefined;
     return res.json(user);
   } catch (error) {
-    console.log(error);
     return res.status(400).json({
       message: "Failed to create a user in DB",
     });

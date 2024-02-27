@@ -71,6 +71,11 @@ nav {
   margin: 0 auto;
 }
 
+.special-wrap{
+  width: 96%;
+  margin: 0 auto;
+}
+
 button {
   border: none;
   outline: none;
@@ -99,6 +104,7 @@ a {
 
 .homePage {
   background-color: var(--primary-color);
+  min-height: 100vh;
 }
 
 .homePage-nav-wrap {
@@ -163,6 +169,164 @@ a {
 
 .homePage-hero-img {
   width: 100%;
+  border-radius: 5px;
 }
 
 /* homePage Section End */
+
+/* signup & signin section start */
+
+.signUp,
+.signIn {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+
+.signUp-nav-wrap,
+.signIn-nav-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.signUp-nav-logo,
+.signIn-nav-logo {
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+
+.signUp-hero-wrap {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding: 1.8em 0 8em 0;
+}
+
+.signIn-hero-wrap {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  padding: 1.8em 0 8em 0;
+}
+
+.signUp-hero-form-header,
+.signIn-hero-form-header {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.signUp-hero-form-subHeader,
+.signIn-hero-form-subHeader {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  margin-bottom: 2.5em;
+}
+
+.signIn-hero-form-subHeader span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.signUp-hero-form-sec,
+.signIn-hero-form-sec {
+  padding-right: 2em;
+}
+
+.signUp-hero-form-input-sec,
+.signIn-hero-form-input-sec {
+  margin-bottom: 2.2em;
+}
+
+.signUp-hero-form-label,
+.signIn-hero-form-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0.8em;
+}
+
+.signUp-hero-form-input,
+.signIn-hero-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 0.7em 1em;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  background-color: transparent;
+  width: 100%;
+}
+
+.signUp-hero-form-button,
+.signIn-hero-form-button {
+  width: 100%;
+  background-color: var(--main-color);
+  border: 1px solid white;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1em 1em;
+  border-radius: 10px;
+}
+
+/* signup & signin section end */
+
+/* userBoard section start */
+
+.userBoard {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+
+.userBoard-nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.userBoard-nav-logo {
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+
+.userBoard-toggle-sec{
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  padding: 0.2em 0.5em 0.2em 0.3em;
+}
+
+.userBoard-toggle-icon{
+  width: 1.9em;
+  height: 1.9em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.userBoard-toggle-icon-alphabet{
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.userBoard-toggle-firstName{
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 200;
+  margin-left: 0.7em;
+}
+
+.userBoard-toggle-arrow-sec{
+  width: 1.6em;
+  height: 1.6em;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-left: 3.5em;
+}
+
+/* userBoard section end */

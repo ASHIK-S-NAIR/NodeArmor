@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "../../assets/heroImg.png";
 
 const HomePage = () => {
@@ -5,9 +6,13 @@ const HomePage = () => {
     <section className="homePage">
       <nav className="homePage-nav">
         <div className="homePage-nav-wrap wrap">
-          <h2 className="homePage-nav-logo">Node Armor</h2>
+          <Link to="/">
+            <h2 className="homePage-nav-logo">Node Armor</h2>
+          </Link>
           <p className="homePage-nav-link">Documentation</p>
-          <button className="cta-btn homePage-nav-signIn-btn">Sign In</button>
+          <Link to="/signin">
+            <button className="cta-btn homePage-nav-signIn-btn">Sign In</button>
+          </Link>
         </div>
       </nav>
       <div className="homePage-hero-sec">
@@ -20,9 +25,11 @@ const HomePage = () => {
                 control of your Node.js servers with advanced monitoring
                 features.
               </h3>
-              <button className="homePage-hero-try-btn cta-btn">
-                Try for free
-              </button>
+              <Link to="/signup">
+                <button className="homePage-hero-try-btn cta-btn">
+                  Try for free
+                </button>
+              </Link>
             </div>
             <div className="homePage-hero-subSec-right">
               <img src={heroImg} alt="" className="homePage-hero-img" />
