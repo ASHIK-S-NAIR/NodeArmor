@@ -71,7 +71,7 @@ nav {
   margin: 0 auto;
 }
 
-.special-wrap{
+.special-wrap {
   width: 96%;
   margin: 0 auto;
 }
@@ -291,7 +291,7 @@ a {
   font-size: 1.8rem;
 }
 
-.userBoard-toggle-sec{
+.userBoard-toggle-sec {
   border-radius: 18px;
   display: flex;
   justify-content: space-between;
@@ -300,7 +300,7 @@ a {
   padding: 0.2em 0.5em 0.2em 0.3em;
 }
 
-.userBoard-toggle-icon{
+.userBoard-toggle-icon {
   width: 1.9em;
   height: 1.9em;
   background-color: rgba(255, 255, 255, 0.7);
@@ -309,24 +309,158 @@ a {
   place-items: center;
 }
 
-.userBoard-toggle-icon-alphabet{
+.userBoard-toggle-icon-alphabet {
   font-weight: 800;
   font-size: 0.95rem;
 }
 
-.userBoard-toggle-firstName{
+.userBoard-toggle-firstName {
   font-size: 0.95rem;
   color: white;
   font-weight: 200;
   margin-left: 0.7em;
 }
 
-.userBoard-toggle-arrow-sec{
+.userBoard-toggle-arrow-sec {
   width: 1.6em;
   height: 1.6em;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   margin-left: 3.5em;
+  cursor: pointer;
+}
+
+.userBoard-body-wrap {
+  height: calc(100vh - 3.7em);
+  display: grid;
+  grid-template-columns: 18% 82%;
+  margin-top: 0.3em;
+}
+
+.userBoard-body-left {
+  /* border: 1px solid green; */
+  padding-top: 4em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+}
+
+.userBoard-body-left-tag {
+  width: 100%;
+  padding: 0.9em 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-size: 0.84rem;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+
+.userBoard-body-left-tag.active {
+  background-color: var(--main-color);
+}
+
+.userBoard-body-right {
+  background-color: #0e0f16;
+  border-top-left-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.projects-sec {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 100%;
+  padding: 3em 2em;
+}
+
+.projects-sec-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-addProject-btn-sec {
+  width: fit-content;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.2em 0.5em 0.2em 0.3em;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.projects-addProject-btn-label {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 200;
+  margin-left: 0.7em;
+}
+
+.projects-addProject-btn-arrow-sec {
+  width: 1.6em;
+  height: 1.6em;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.projects-list-sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects-project-sec {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+}
+
+.projects-project-header {
+  font-size: 1rem;
+  color: white;
+}
+
+.addProject-sec {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  padding: 3em 2em;
+}
+
+.addProject-form-label {
+  font-size: 0.95rem;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.addProject-form{
+ width: 100%;
+}
+
+.addProject-form-sec{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addProject-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+  background-color: transparent;
+  width: 80%;
+  color: white;
+}
+
+.addProject-form-btn{
+  margin-top: 2.5em;
 }
 
 /* userBoard section end */
